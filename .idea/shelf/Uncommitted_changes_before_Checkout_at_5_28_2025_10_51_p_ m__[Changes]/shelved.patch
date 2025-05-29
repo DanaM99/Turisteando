@@ -1,0 +1,156 @@
+Index: app/src/main/java/com/example/turisteando/MainActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.turisteando\r\n\r\nimport android.os.Bundle\r\nimport androidx.activity.enableEdgeToEdge\r\nimport androidx.appcompat.app.AppCompatActivity\r\nimport androidx.core.view.ViewCompat\r\nimport androidx.core.view.WindowInsetsCompat\r\n\r\nclass MainActivity : AppCompatActivity() {\r\n    override fun onCreate(savedInstanceState: Bundle?) {\r\n        super.onCreate(savedInstanceState)\r\n        enableEdgeToEdge()\r\n        setContentView(R.layout.activity_main)\r\n        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->\r\n            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())\r\n            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)\r\n            insets\r\n        }\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/turisteando/MainActivity.kt b/app/src/main/java/com/example/turisteando/MainActivity.kt
+--- a/app/src/main/java/com/example/turisteando/MainActivity.kt	(revision bad0f6028ea02b2aaa423e4aaecc931bf96590bc)
++++ b/app/src/main/java/com/example/turisteando/MainActivity.kt	(date 1748483396689)
+@@ -1,20 +1,29 @@
+ package com.example.turisteando
+ 
++import android.content.Intent
+ import android.os.Bundle
+-import androidx.activity.enableEdgeToEdge
++import android.widget.Button
+ import androidx.appcompat.app.AppCompatActivity
+-import androidx.core.view.ViewCompat
+-import androidx.core.view.WindowInsetsCompat
+ 
+ class MainActivity : AppCompatActivity() {
+     override fun onCreate(savedInstanceState: Bundle?) {
+         super.onCreate(savedInstanceState)
+-        enableEdgeToEdge()
+         setContentView(R.layout.activity_main)
+-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+-            insets
++
++        val btnLugares = findViewById<Button>(R.id.btnLugares)
++        val btnSugerir = findViewById<Button>(R.id.btnSugerir)
++        val btnSobre = findViewById<Button>(R.id.btnSobre)
++
++        btnLugares.setOnClickListener {
++            startActivity(Intent(this, lugares_activity::class.java))
++        }
++
++        btnSugerir.setOnClickListener {
++            startActivity(Intent(this, sugerir_activity::class.java))
++        }
++
++        btnSobre.setOnClickListener {
++            startActivity(Intent(this, sobre_activity::class.java))
+         }
+     }
+ }
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:id=\"@+id/main\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".MainActivity\">\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"Hello World!\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/button\"\r\n        android:layout_width=\"195dp\"\r\n        android:layout_height=\"97dp\"\r\n        android:text=\"Button\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/textView\" />\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_main.xml b/app/src/main/res/layout/activity_main.xml
+--- a/app/src/main/res/layout/activity_main.xml	(revision bad0f6028ea02b2aaa423e4aaecc931bf96590bc)
++++ b/app/src/main/res/layout/activity_main.xml	(date 1748483458261)
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:id="@+id/main"
+@@ -7,23 +7,69 @@
+     android:layout_height="match_parent"
+     tools:context=".MainActivity">
+ 
+-    <TextView
+-        android:id="@+id/textView"
+-        android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
+-        android:text="Hello World!"
+-        app:layout_constraintBottom_toBottomOf="parent"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toTopOf="parent" />
++    <!-- Fondo: Imagen con transparencia -->
++    <ImageView
++        android:id="@+id/imageFondo"
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:src="@drawable/villa2"
++        android:scaleType="centerCrop"
++        android:alpha="0.4" />
++
++    <View
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:background="#B3000000" />
++
++    <!-- Contenido encima de la imagen -->
++    <androidx.constraintlayout.widget.ConstraintLayout
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:padding="24dp">
++
++        <LinearLayout
++            android:id="@+id/contentLayout"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:orientation="vertical"
++            android:gravity="center"
++            android:layout_marginHorizontal="24dp"
++            app:layout_constraintTop_toTopOf="parent"
++            app:layout_constraintBottom_toBottomOf="parent"
++            app:layout_constraintStart_toStartOf="parent"
++            app:layout_constraintEnd_toEndOf="parent">
++
+ 
+-    <Button
+-        android:id="@+id/button"
+-        android:layout_width="195dp"
+-        android:layout_height="97dp"
+-        android:text="Button"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toBottomOf="@+id/textView" />
++
++            <!-- Botón Lugares turísticos -->
++            <Button
++                android:id="@+id/btnLugares"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:text="Lugares turísticos"
++                android:backgroundTint="#4CAF50"
++                android:textColor="#FFFFFF"
++                android:layout_marginBottom="16dp" />
++
++            <!-- Botón Sugerir lugar -->
++            <Button
++                android:id="@+id/btnSugerir"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:text="Sugerir un lugar"
++                android:backgroundTint="#03A9F4"
++                android:textColor="#FFFFFF"
++                android:layout_marginBottom="16dp" />
+ 
+-</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
++            <!-- Botón Sobre la ciudad -->
++            <Button
++                android:id="@+id/btnSobre"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:text="Sobre Villa del Rosario"
++                android:backgroundTint="#FF9800"
++                android:textColor="#FFFFFF" />
++
++        </LinearLayout>
++    </androidx.constraintlayout.widget.ConstraintLayout>
++</FrameLayout>
+\ No newline at end of file

@@ -13,6 +13,18 @@
         android:theme="@style/Theme.Turisteando"
         tools:targetApi="31">
         <activity
+            android:name=".detalles_lugares_activity"
+            android:exported="false" />
+        <activity
+            android:name=".sobre_activity"
+            android:exported="false" />
+        <activity
+            android:name=".sugerir_activity"
+            android:exported="false" />
+        <activity
+            android:name=".lugares_activity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

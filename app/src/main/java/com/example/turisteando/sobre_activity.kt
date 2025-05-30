@@ -35,12 +35,14 @@ class sobre_activity : AppCompatActivity() {
 
         // Configurar el botón de volver
         findViewById<View>(R.id.backButton).setOnClickListener {
-            finish()
+            val intent = Intent(this, MainActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+            startActivity(intent)
         }
-    }
 
 
-    private fun setupGalleryImages() {
+
+        private fun setupGalleryImages() {
         val imageIds = listOf(
             R.id.foto1, R.id.foto2, R.id.foto3, R.id.foto4, R.id.foto5, R.id.foto6
         )

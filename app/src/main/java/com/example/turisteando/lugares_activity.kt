@@ -40,10 +40,52 @@ class lugares_activity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val btCvar = findViewById<Button>(R.id.btnCvar)
+        val btnCvar = findViewById<Button>(R.id.btnCvar)
         btnCementerio.setOnClickListener {
             val intent = Intent(this, detalles_lugares_activity::class.java)
             intent.putExtra("idLugar", 4)
+            startActivity(intent)
+        }
+
+        val btnFestival = findViewById<Button>(R.id.btnFestival)
+        btnCementerio.setOnClickListener {
+            val intent = Intent(this, detalles_lugares_activity::class.java)
+            intent.putExtra("idLugar", 5)
+            startActivity(intent)
+        }
+
+        val btnMuseo = findViewById<Button>(R.id.btnMuseo)
+        btnCementerio.setOnClickListener {
+            val intent = Intent(this, detalles_lugares_activity::class.java)
+            intent.putExtra("idLugar", 6)
+            startActivity(intent)
+        }
+
+        val btnPaso = findViewById<Button>(R.id.btnPaso)
+        btnCementerio.setOnClickListener {
+            val intent = Intent(this, detalles_lugares_activity::class.java)
+            intent.putExtra("idLugar", 7)
+            startActivity(intent)
+        }
+
+        val btnRio = findViewById<Button>(R.id.btnRio)
+        btnCementerio.setOnClickListener {
+            val intent = Intent(this, detalles_lugares_activity::class.java)
+            intent.putExtra("idLugar", 8)
+            startActivity(intent)
+        }
+
+        val btnPlaza = findViewById<Button>(R.id.btnPlaza)
+        btnCementerio.setOnClickListener {
+            val intent = Intent(this, detalles_lugares_activity::class.java)
+            intent.putExtra("idLugar", 9)
+            startActivity(intent)
+        }
+
+        val btnOratoria = findViewById<Button>(R.id.btnOratoria)
+        btnCementerio.setOnClickListener {
+            val intent = Intent(this, detalles_lugares_activity::class.java)
+            intent.putExtra("idLugar", 10)
             startActivity(intent)
         }
 

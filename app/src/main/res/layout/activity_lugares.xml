@@ -18,7 +18,7 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Lugar 1 -->
+            <!-- Lugar 1 Basilica -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -35,25 +35,25 @@
                         android:layout_width="match_parent"
                         android:layout_height="180dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/villa" />
+                        android:src="@drawable/basilica" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Parque Natural El Paraíso"
+                        android:text="Basilica"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:padding="12dp" />
 
                     <Button
-                        android:id="@+id/btnParaiso"
+                        android:id="@+id/btnBasilica"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Ver más" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Lugar 2 -->
+            <!-- Lugar 2 Capilla -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -70,18 +70,126 @@
                         android:layout_width="match_parent"
                         android:layout_height="180dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/villa" />
+                        android:src="@drawable/capilla" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Termas Villa del Rosario"
+                        android:text="Capilla"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:padding="12dp" />
 
                     <Button
-                        android:id="@+id/btnTermas"
+                        android:id="@+id/btnCapilla"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ver más" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Lugar 3 Cementerio-->
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cementerio" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cementerio"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:padding="12dp" />
+
+                    <Button
+                        android:id="@+id/btnCementerio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ver más" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Lugar 4 CVAR-->
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cvar" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CVAR"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:padding="12dp" />
+
+                    <Button
+                        android:id="@+id/btnCvar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ver más" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Lugar 5 Festival-->
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/festival" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Festival"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:padding="12dp" />
+
+                    <Button
+                        android:id="@+id/btnFestival"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Ver más" />

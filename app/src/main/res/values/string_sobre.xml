@@ -1,0 +1,15 @@
+<resources>
+    <string name="vdr_name">Villa del Rosario</string>
+    <string name="title_villa_del_rosario">Villa del Rosario, Córdoba</string>
+    <string name="featured_image_desc">Vista destacada de Villa del Rosario</string>
+    <string name="gallery_title">Galería de imágenes</string>
+    <string name="gallery_image_desc">Imagen de Villa del Rosario</string>
+    <string name="contact_title">Contacto</string>
+    <string name="phone_label">Teléfono: 03573-421234</string>
+    <string name="address_label">Dirección: Av. San Martín 1234</string>
+    <string name="email_label">Email: turismo@villadelrosario.gov.ar</string>
+    <string name="back_button">Volver</string>
+
+
+    <string name="villa_description">Villa del Rosario, cabecera del departamento Río Segundo en Córdoba, es una joya cordobesa que combina historia, naturaleza y cultura en cada rincón. La ciudad deslumbra con su río Xanaes, su costanera arbolada y el tradicional Festival de Folklore en el Agua, que vibra al ritmo de músicos y bailarines.\n\nFundada en 1795 como Villa Real del Rosario, conserva su esencia en las antiguas construcciones, plazas pintorescas y relatos que aún circulan por sus calles. Con una comunidad cálida y hospitalaria, ofrece experiencias inolvidables a través de su gastronomía, su fuerte identidad rural y una agenda cultural que no descansa.\n\nUbicada a tan solo 78 km de Córdoba Capital, y en un punto estratégico entre rutas provinciales, la ciudad invita a descubrirla todo el año. Ya sea para disfrutar de un atardecer en la costanera, participar en ferias de artesanos o explorar su historia, Villa del Rosario se presenta como el destino ideal para escaparse, reconectar y dejarse sorprender.\n\nVilla del Rosario te espera con los brazos abiertos.</string>
+</resources>

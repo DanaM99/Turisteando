@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <!-- Título principal (verde) -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_villa_del_rosario"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/green_title"
+            android:paddingBottom="16dp"/>
+
+
+        <!-- Foto destacada -->
+
+
+        <!-- Texto breve -->
+        <ImageView
+            android:id="@+id/featuredImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/featured_image_desc"
+            android:scaleType="centerCrop"
+            android:src="@drawable/villa_featured" />
+
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/villa_description"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="24dp"/>
+
+
+        <!-- Título Galería (naranja) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gallery_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/orange_title"
+            android:layout_marginBottom="8dp"/>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:layout_marginBottom="24dp">
+
+
+            <ImageView
+                android:id="@+id/foto1"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/foto1"
+                android:contentDescription="@string/gallery_image_desc"/>
+
+
+            <!-- Repetir para las 6 imágenes -->
+            <ImageView
+                android:id="@+id/foto2"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/foto2"
+                android:contentDescription="@string/gallery_image_desc"/>
+
+
+            <ImageView
+                android:id="@+id/foto3"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/foto3"
+                android:contentDescription="@string/gallery_image_desc"/>
+
+
+            <ImageView
+                android:id="@+id/foto4"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/foto4"
+                android:contentDescription="@string/gallery_image_desc"/>
+
+
+            <ImageView
+                android:id="@+id/foto5"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/foto5"
+                android:contentDescription="@string/gallery_image_desc"/>
+
+
+            <ImageView
+                android:id="@+id/foto6"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/foto6"
+                android:contentDescription="@string/gallery_image_desc"/>
+
+
+
+
+
+
+        </GridLayout>
+
+
+        <!-- Título Contacto (naranja) -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/orange_title"
+            android:layout_marginBottom="8dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+
+            <!-- Teléfono -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_label"
+                android:drawableLeft="@drawable/ic_call_teal"
+                android:drawableTint="@color/social_icons"
+                android:drawablePadding="8dp"
+                android:layout_marginTop="8dp"/>
+
+
+            <!-- Dirección -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/address_label"
+                android:drawableLeft="@drawable/ic_location_teal"
+                android:drawablePadding="8dp"
+                android:layout_marginTop="8dp"/>
+
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email_label"
+                android:drawableLeft="@drawable/ic_email_teal"
+                android:drawablePadding="8dp"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+
+        <!-- Redes sociales -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+
+            <ImageButton
+                android:id="@+id/facebookButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_facebook"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+
+            <ImageButton
+                android:id="@+id/instagramButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_instagram"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+
+
+        <!-- Botón Volver (verde) -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back_button"
+            android:drawableLeft="@drawable/ic_back"
+            android:drawablePadding="8dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/button_green"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</ScrollView>

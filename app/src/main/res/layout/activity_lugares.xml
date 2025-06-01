@@ -45,7 +45,8 @@
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:paddingTop="12dp"
-                        android:paddingBottom="8dp" />
+                        android:paddingBottom="8dp"
+                        android:textAlignment="center"/>
 
                     <Button
                         android:id="@+id/btnBasilica"
@@ -87,7 +88,8 @@
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:paddingTop="12dp"
-                        android:paddingBottom="8dp"/>
+                        android:paddingBottom="8dp"
+                        android:textAlignment="center"/>
 
                     <Button
                         android:id="@+id/btnCapilla"
@@ -130,7 +132,8 @@
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:paddingTop="12dp"
-                        android:paddingBottom="8dp" />
+                        android:paddingBottom="8dp"
+                        android:textAlignment="center"/>
 
                     <Button
                         android:id="@+id/btnCementerio"
@@ -173,7 +176,8 @@
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:paddingTop="12dp"
-                        android:paddingBottom="8dp" />
+                        android:paddingBottom="8dp"
+                        android:textAlignment="center"/>
 
                     <Button
                         android:id="@+id/btnCvar"
@@ -216,7 +220,8 @@
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:paddingTop="12dp"
-                        android:paddingBottom="8dp" />
+                        android:paddingBottom="8dp"
+                        android:textAlignment="center"/>
 
                     <Button
                         android:id="@+id/btnFestival"
@@ -259,7 +264,8 @@
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:paddingTop="12dp"
-                        android:paddingBottom="8dp" />
+                        android:paddingBottom="8dp"
+                        android:textAlignment="center"/>
 
                     <Button
                         android:id="@+id/btnMuseo"
@@ -302,7 +308,8 @@
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:paddingTop="12dp"
-                        android:paddingBottom="8dp" />
+                        android:paddingBottom="8dp"
+                        android:textAlignment="center"/>
 
                     <Button
                         android:id="@+id/btnPaso"
@@ -345,7 +352,8 @@
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:paddingTop="12dp"
-                        android:paddingBottom="8dp" />
+                        android:paddingBottom="8dp"
+                        android:textAlignment="center"/>
 
                     <Button
                         android:id="@+id/btnRio"
@@ -388,7 +396,8 @@
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:paddingTop="12dp"
-                        android:paddingBottom="8dp" />
+                        android:paddingBottom="8dp"
+                        android:textAlignment="center"/>
 
                     <Button
                         android:id="@+id/btnPlaza"
@@ -431,7 +440,8 @@
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:paddingTop="12dp"
-                        android:paddingBottom="8dp" />
+                        android:paddingBottom="8dp"
+                        android:textAlignment="center"/>
 
                     <Button
                         android:id="@+id/btnOratoria"

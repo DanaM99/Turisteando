@@ -322,7 +322,7 @@ class detalles_lugares_activity : AppCompatActivity() {
 
             8 -> LugarTuristico(
                 titulo = "Río Xanaes",
-                descripcion = "Con una extensión de 3 kilómetros…",
+                descripcion = "Con una extensión de 3 kilómetros, la costanera de Villa del Rosario se presenta como un espacio de esparcimiento y disfrute de bellos paisajes y frondosas sombras. Desde su declaración como espacio público por el intendente Adolfo Liendo el 13 de enero de 1937, las costas del Xanaes se han transformado en un paso obligado para los turistas, así como un punto de encuentro para los vecinos de todas las edades y a lo largo de todo el año. Además de sus balnearios, la costanera cuenta con un escenario sobre el cauce del río, donde tiene lugar el Festival Nacional de Folclore en el Agua, un Camping Municipal que permite acampar, un Parador Joven con un amplio espacio de esparcimiento, un corredor peatonal que la recorre en su totalidad, y un Parque Saludable con máquinas para hacer ejercicios.",
                 direccion = "Av. Ángel Mastri",
                 telefono = "+54 9 3573 42-2321",
                 email = "villadelrosarioturismo@gmail.com",
@@ -437,5 +437,4 @@ class detalles_lugares_activity : AppCompatActivity() {
         )
         startActivity(intent)
     }
-
 }

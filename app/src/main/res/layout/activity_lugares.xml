@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".lugares_activity">
+
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
@@ -24,7 +25,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 app:cardElevation="8dp"
-                app:cardCornerRadius="12dp">
+                app:cardCornerRadius="12dp"
+                android:background="@color/white">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -43,7 +45,7 @@
                         android:text="Basilica"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:paddingTop="12dp"
                         android:paddingBottom="8dp"
                         android:textAlignment="center"/>
@@ -86,7 +88,7 @@
                         android:text="Capilla"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:paddingTop="12dp"
                         android:paddingBottom="8dp"
                         android:textAlignment="center"/>
@@ -130,7 +132,7 @@
                         android:text="Cementerio"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:paddingTop="12dp"
                         android:paddingBottom="8dp"
                         android:textAlignment="center"/>
@@ -174,7 +176,7 @@
                         android:text="CVAR"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:paddingTop="12dp"
                         android:paddingBottom="8dp"
                         android:textAlignment="center"/>
@@ -218,7 +220,7 @@
                         android:text="Festival"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:paddingTop="12dp"
                         android:paddingBottom="8dp"
                         android:textAlignment="center"/>
@@ -262,7 +264,7 @@
                         android:text="Museo"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:paddingTop="12dp"
                         android:paddingBottom="8dp"
                         android:textAlignment="center"/>
@@ -306,7 +308,7 @@
                         android:text="Paso de las Tropas"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:paddingTop="12dp"
                         android:paddingBottom="8dp"
                         android:textAlignment="center"/>
@@ -350,7 +352,7 @@
                         android:text="Rio Xanaes"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:paddingTop="12dp"
                         android:paddingBottom="8dp"
                         android:textAlignment="center"/>
@@ -394,7 +396,7 @@
                         android:text="Plaza"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:paddingTop="12dp"
                         android:paddingBottom="8dp"
                         android:textAlignment="center"/>
@@ -438,7 +440,7 @@
                         android:text="Oratoria"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:paddingTop="12dp"
                         android:paddingBottom="8dp"
                         android:textAlignment="center"/>
@@ -455,11 +457,6 @@
                         android:padding="8dp" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
-
-
-
-
         </LinearLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -109,11 +109,7 @@ class detalles_lugares_activity : AppCompatActivity() {
         }
 
         //Muestro footer segun el lugar
-        footerLayout.visibility = if (idLugar in listOf(1 /*,2,...*/)) {
-            View.VISIBLE
-        } else {
-            View.GONE
-        }
+        footerLayout.visibility = View.VISIBLE
     }
 
     private fun abrirUrl(url: String) {

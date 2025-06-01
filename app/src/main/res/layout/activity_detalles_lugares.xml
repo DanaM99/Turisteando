@@ -192,7 +192,7 @@
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/icono_telefono"
+                        android:src="@drawable/logo_telefono"
                         android:contentDescription="Icono WhatsApp" />
 
                     <TextView

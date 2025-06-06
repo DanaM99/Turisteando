@@ -1,4 +1,4 @@
-![WhatsApp Image 2025-06-06 at 17 55 55](https://github.com/user-attachments/assets/f7f68145-f3e9-44bd-abe5-a40c1fcc7cdd)**Turisteando.**
+**Turisteando.**
 
 ## Descripción del Proyecto.
 
@@ -36,32 +36,6 @@ git clone https://github.com/tu-usuario/Turisteando.git
 Abrir el proyecto en Android Studio
 Sincronizar las dependencias Gradle
 Ejecutar en un emulador o dispositivo físico
-
-## Capturas de Pantalla.
-
-**Pantalla de Bienvenida**
-
-![Pantalla Principal](https://github.com/user-attachments/assets/985f3747-f974-4496-aa31-1a6f7ddca6bd)
-
-**Listado de Lugares**
-
-![Listado de Lugares](https://github.com/user-attachments/assets/052b7f54-b837-4ad7-a868-7b26931a305f)
-
-**Detalle de Lugar**
-
-![Detalles del Lugar](https://github.com/user-attachments/assets/ab106934-8192-444d-893b-779f35f79b92)
-
-**Formulario de Sugerencia**
-
-![Formulario de Sugerencias](https://github.com/user-attachments/assets/bb7b1dec-299e-40f0-96ff-45cf0cd846ff)
-
-**Sobre la Ciudad**
-
-![Sobre la Ciudad](https://github.com/user-attachments/assets/e4d1e299-8e12-4518-bc0b-38f3127c6e6a)
-![Sobre la Ciudad 2](https://github.com/user-attachments/assets/6563c8a9-41dc-4b87-9973-300b169b9894)
-
-**Footer**
-![Footer](https://github.com/user-attachments/assets/f12bc486-49ef-4fa0-a562-b706f3ce7629)
 
 ## Autores del Equipo
 
@@ -102,6 +76,34 @@ Datos de prueba para lugares turísticos
 Creación del proyecto en Android Studio
 Configuración inicial del repositorio Git
 Estructura básica de paquetes y actividades
+
+## Capturas de Pantalla.
+
+**Pantalla de Bienvenida**
+
+![Pantalla Principal](https://github.com/user-attachments/assets/985f3747-f974-4496-aa31-1a6f7ddca6bd)
+
+**Listado de Lugares**
+
+![Listado de Lugares](https://github.com/user-attachments/assets/052b7f54-b837-4ad7-a868-7b26931a305f)
+
+**Detalle de Lugar**
+
+![Detalles del Lugar](https://github.com/user-attachments/assets/ab106934-8192-444d-893b-779f35f79b92)
+
+**Formulario de Sugerencia**
+
+![Formulario de Sugerencias](https://github.com/user-attachments/assets/bb7b1dec-299e-40f0-96ff-45cf0cd846ff)
+
+**Sobre la Ciudad**
+
+![Sobre la Ciudad](https://github.com/user-attachments/assets/e4d1e299-8e12-4518-bc0b-38f3127c6e6a)
+
+![Sobre la Ciudad 2](https://github.com/user-attachments/assets/6563c8a9-41dc-4b87-9973-300b169b9894)
+
+**Footer**
+![Footer](https://github.com/user-attachments/assets/f12bc486-49ef-4fa0-a562-b706f3ce7629)
+
 
 ## Demo en GIF
 

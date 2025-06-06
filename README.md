@@ -1,6 +1,6 @@
 **Turisteando.**
 
-## Descripción del Proyecto.
+## 📝  Descripción del Proyecto.
 
 Turisteando es una aplicación móvil diseñada para descubrir y explorar lugares turísticos destacados en la ciudad de Villa del Rosario. 
 La app resuelve el problema de la falta de información accesible sobre puntos de interés locales, ofreciendo:
@@ -77,7 +77,7 @@ Creación del proyecto en Android Studio
 Configuración inicial del repositorio Git
 Estructura básica de paquetes y actividades
 
-## Capturas de Pantalla.
+## 📱 Capturas de Pantalla.
 
 **Pantalla de Bienvenida**
 
